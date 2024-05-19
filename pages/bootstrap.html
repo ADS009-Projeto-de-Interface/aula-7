@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="ADS009 - Projeto de Interface">
+        <meta name="author" content="24114290137 - Sérgio Silva">
+
+        <!-- Chamando Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet" />
+
+        <!-- Chamando CSS -->
+        <link rel="stylesheet" href="../css/style.css" />
+
+        <!-- Chamando Bootstrap 5.3.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- Chamando Biblioteca de Ícones Material Design -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <!-- Colocando Favicon na página-->
+        <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+        <!-- Material Design Icons -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- Acionando Toasts -->
+        <script src="../js/snippers.js" defer></script>
+
+        <title>ADS009 - Projeto de Interface | Aula 2 > Atividade 02 | Bootstrap</title>
+    </head>
+    <body>
+        <!-- ATIVIDADE 06 - FINAL -->
+        <!-- Esta é a nossa avaliação final, no qual você deverá aplicar todos os conceitos visto em aula até então sobre HTML e CSS.
+            O tema que você criar nesta atividade deve se estender até a entrega do trabalho final da Avaliação A2, para criação do
+            site responsivo, por isso escolha bem a temática. O seu site deve ter obrigatoriamente: -->
+
+        <!-- Itens do Index: -->
+        <!-- [x] Imagem ou logo de Favicon com texto na Aba (Title); -->
+        <!-- [x] Menu, criado com Nav, com link para no mínimo 4 páginas (pode ter aplicação do Header; -->
+        <!-- [x] Abaixo do Menu, Imagem de entrada, ou como Background; -->
+        <!-- [x] Nota de Rodapé, utilizando no mínimo 4 ícones clicáveis e duas divisões de informações. -->
+
+        <!-- Informações gerais -->
+        <!-- [x] no mínimo 4 parágrafos de texto, duas imagens, e 1 arquivo de qualquer mídia (áudio, vídeo); -->
+
+        <!-- Itens da Páginas: -->
+        <!-- [x] Cada página deve ter no mínimo 4 parágrafos de texto, duas imagens, e 1 arquivo de qualquer mídia (áudio, vídeo); -->
+        <!-- [x] Em uma das páginas deve ter uma seção com no mínimo 3 imagens com textos; -->
+        <!-- [x] Um formulário com no mínimo 20 entradas, aplicação de Fieldset e botão Enviar; -->
+        <!-- [-] Criação de 6 Listas, com alguma alteração de CSS. -->
+
+        <!-- Informações de Design obrigatórias: -->
+        <!-- [-] Seu projeto deve utilizar no mínimo 5 fontes (online ou off-line); -->
+        <!-- [x] Deve utilizar apenas cores idênticas as cores da sua logo, marca ou cores utilizadas no menu, como holver e Box; -->
+        <!-- [-] As seções devem ter cores diferentes (background), apenas o menu pode ser branco padrão. -->
+
+        <!-- Entregar no mínimo: -->
+        <!-- [x] 1 arquivo Index -->
+        <!-- [x] 4 arquivos .html -->
+        <!-- [x] 1 arquivo .css -->
+        <!-- [x] 11 Imagens -->
+        <!-- [x] 4 áudios ou vídeos -->
+        <!-- [x] 3 ícones -->
+
+        <!-- Lembrando que os mesmos devem estar em pastas para facilitar o processo de avaliação. -->
+        <!-- [x] Caso use mais de um CSS criar uma pasta de Estilos. -->
+        <!-- [x] No anexo abaixo, tem um exemplo de execução, que serve como base.-->
+
+        <!-- MENU PRINCIPAL -->
+        <nav class="navbar navbar-expand-lg bg-magenta sticky-top p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light text-white brand-logo" href="#">Sérgio Silva</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Frontend
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" href="frontend.html">Frontend</a></li>
+                                <li><a class="dropdown-item text-dark" href="html.html">HTML5</a></li>
+                                <li><a class="dropdown-item text-dark" href="css.html">CSS3</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-dark" href="js.html">JS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Frameworks
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark fw-bolder" href="bootstrap.html">Bootstrap</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-dark" href="nodejs.html">NodeJS</a></li>
+                                <li><a class="dropdown-item text-dark" href="react.html">React Native</a></li>
+                                <li><a class="dropdown-item text-dark" href="angular.html">Angular 17.3.0</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Design
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-dark" href="ui.html">UI Design</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-dark" href="ux.html">UX Design</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div id="socialMedia">
+                        <a href="https://web.facebook.com/sergio.bezerradasilva" class="me-4 text-light" target="_blank"
+                            alt="Veja o meu Faceboook" title="Veja o meu Faceboook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sergio.silva.85/" class="me-4 text-light" target="_blank"
+                            alt="Veja o meu Instagram" title="Veja o meu Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sergiobslva/" class="me-4 text-light" target="_blank"
+                            alt="Visite o meu Linkedin" title="Visite o meu Linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ADS009-Projeto-de-Interface" class="me-4 text-light" target="_blank"
+                            alt="Acesse o meu Github" title="Acesse o meu Github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <!-- Banner Principal -->
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/banner-bootstrap-01.png" class="d-block w-100" alt="CSS - Cascading Style Sheets">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Bootstrap 5</h1>
+                    <p class="col-md-8 fs-4"><b>Bootstrap 5</b> é um projeto de código aberto originalmente desenvolvido para o site Twitter, chamado de Twitter Blueprint, desenvolvido por <a href="https://markdotto.com/" target="_blank">Mark Otto</a> e <a href="https://www.linkedin.com/in/jacob-thornton-13a6a5162" target="_blank">Jacob Thornton</a> como um instrumento para incentivar a consistência através de ferramentas internas.</p>
+                </div>
+
+                <div class="row align-items-md-stretch m-4">
+                    <div class="col-md-6">
+                        <div class="h-100 p-5 rounded-3 text-light" style="background-color: #7F12F9;">
+                            <h2>Bootstrap V5.1.3</h2>
+                            <p class="fw-light">Bootstrap 5 é a terceira mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), pela qual se define estilos para um projeto web (página de internet). Com efeitos de transição, imagem, imagem de fundo/background e outros, pode-se criar estilos únicos para seus projetos web, alterando diversos aspectos de design no layout da página.</p>
+                            <p class="fw-light">Em 31 de janeiro de 2012, o Bootstrap 2 foi lançado; e foi responsável por acrescentar a layout grid responsiva de doze colunas, suporte interno para <code class="text-warning">Glyphicons</code>, vários novos componentes, bem como as alterações para muitos dos componentes existentes.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                            <h2>Importante você saber!</h2>
+                            <ul class="fw-light">
+                                <li>
+                                    <button type="button" class="btn btn-ligh">O Bootstrap é para quem já <b>SABE!</b></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">A curva de aprendizagem é <b>MÉDIA</b></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Depois da prática, ele vai economizar <b>MUITO TEMPO</b></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Não só CSS mas Javascript também</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Sempre em atualização</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Tem uma comunidade <i>muito forte</i></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Facilmente customizável 😉</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row p-4"></div>
+
+                    <div class="row m-4">
+                        <div class="col mb-2">
+                            <h2>Quem criou o Bootstrap?</h2>
+                            <small>De quem partiu a iniciativa de criar o Core?</small>
+                        </div>
+
+                        <div class="col">
+                            <h2>Primeiros Passos</h2>
+                            <small>Como fazer funcionar no seu código</small>
+                        </div>
+                    </div>
+
+                    <div class="row m-3">
+                        <div class="col-3">
+                            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+                            <div class="badge-base LI-profile-badge w-100 mb-2" data-locale="pt_BR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="jacob-thornton-13a6a5162" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/jacob-thornton-13a6a5162?trk=profile-badge"></a></div>
+                            <iframe class="rounded" src="https://open.spotify.com/embed/episode/4dtpOnbkxkoQmXuLVfJwxV?utm_source=generator" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                        <div class="col-3">
+                            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+                            <div class="badge-base LI-profile-badge mb-2" data-locale="pt_BR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="markdotto" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/markdotto?trk=profile-badge"></a></div>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7DvxLrCLYDkkSSiRzOKJT7?utm_source=generator" width="90%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+
+                        <div class="col-6">
+                            <iframe width="560" height="315" class="rounded" src="https://www.youtube.com/embed/O_9u1P5YjVc?si=fE1lDw7sJH7cHwz5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <p class="fw-light mt-3">Aprenda como criar uma página de destino responsiva com Bootstrap - usando recursos e componentes novos do Bootstrap 5 (acordeão e offcanvas), nesta série de tutoriais de cursos intensivos do Bootstrap 5.</p>
+                        </div>
+                    </div>
+              
+
+                    <div class="bd-example m-4">
+
+                    </div>
+
+                </div>
+
+              </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-primary text-white text-center text-lg-start mt-5">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Conecte-se comigo nas redes sociais:</span>
+                </div>
+                <!-- Left -->
+        
+                <!-- Right -->
+                <div id="socialMedia">
+                    <a href="https://web.facebook.com/sergio.bezerradasilva" class="me-4 text-reset" target="_blank"
+                        alt="Veja o meu Faceboook" title="Veja o meu Faceboook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sergio.silva.85/" class="me-4 text-reset" target="_blank"
+                        alt="Veja o meu Instagram" title="Veja o meu Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sergiobslva/" class="me-4 text-reset" target="_blank"
+                        alt="Visite o meu Linkedin" title="Visite o meu Linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ADS009-Projeto-de-Interface" class="me-4 text-reset" target="_blank"
+                        alt="Acesse o meu Github" title="Acesse o meu Github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <a class="d-inline-flex align-items-center mb-2 text-light text-decoration-none"
+                                href="https://getbootstrap.com/" aria-label="Bootstrap" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2"
+                                    viewBox="0 0 118 94" role="img">
+                                    <title>Frontend</title>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <span class="fs-5">Frontend c/ Bootstrap</span>
+                            </a>
+                            <p>
+                                O <b>Frontend</b> de uma página na web desempenha um papel fundamental na experiência do usuário,
+                                sendo a
+                                primeira impressão e o ponto de interação entre o usuário e o conteúdo.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Principal
+                            </h6>
+                            <p>
+                                <a href="frontend.html" class="text-reset">Frontend</a>
+                            </p>
+                            <p>
+                                <a href="html.html" class="text-reset" alt="HTML5" title="HTML5">HTML5</a>
+                            </p>
+                            <p>
+                                <a href="css.html" class="text-reset" alt="CSS3" title="CSS3">CSS3</a>
+                            </p>
+                            <p>
+                                <a href="forms.html" class="text-reset" alt="Formulários HTML"
+                                    title="Formulários HTML">Formulários</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Complemento
+                            </h6>
+                            <p>
+                                <a href="bootstrap.html" class="text-reset">Bootstrap</a>
+                            </p>
+                            <p>
+                                <a href="js.html" class="text-reset">Javascript</a>
+                            </p>
+                            <p>
+                                <a href="nodejs.html" class="text-reset">NodeJS</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset disabled">React Native</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                            <p><i class="fas fa-home me-2"></i> Brasília, Samambaia Sul, DF</p>
+                            <p><i class="fas fa-envelope me-2"></i>sergio.b.silva@iesb.edu.br</p>
+                            <p><i class="fas fa-phone me-2 text-light"></i><a href="https://wa.me/5561985016770" target="_blank"
+                                    class="text-light" alt="Converse comigo pelo Whatsapp" title="Converse comigo pelo Whatsapp">+
+                                    55 61 98501 6770</a></p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+                © OADSNM1AB-ADS009-20241 - Projeto de Interface | IESB OESTE:
+                <a class="text-light" href="https://classroom.google.com/c/NjU2ODc1Njk5NTI2" target="_blank">Google
+                    Classroom</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+        <!-- Chamandas Scripts Bootstrap 5.3.3 -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </body>
+
+</html>

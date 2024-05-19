@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://ads009-projeto-de-interface.github.io/aula-6/</loc>
+  <lastmod>2024-04-10T22:04:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ads009-projeto-de-interface.github.io/aula-6/index.html</loc>
+  <lastmod>2024-04-10T22:04:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ads009-projeto-de-interface.github.io/aula-6/pages/frontend.html</loc>
+  <lastmod>2024-04-10T22:04:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ads009-projeto-de-interface.github.io/aula-6/pages/html.html</loc>
+  <lastmod>2024-04-10T22:04:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ads009-projeto-de-interface.github.io/aula-6/pages/css.html</loc>
+  <lastmod>2024-04-10T22:04:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ads009-projeto-de-interface.github.io/aula-6/pages/forms.html</loc>
+  <lastmod>2024-04-10T22:04:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ads009-projeto-de-interface.github.io/aula-6/pages/bootstrap.html</loc>
+  <lastmod>2024-04-10T22:04:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ads009-projeto-de-interface.github.io/aula-6/pages/js.html</loc>
+  <lastmod>2024-04-10T22:04:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ads009-projeto-de-interface.github.io/aula-6/pages/nodejs.html</loc>
+  <lastmod>2024-04-10T22:04:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

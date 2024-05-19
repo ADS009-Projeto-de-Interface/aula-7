@@ -1,32 +1,39 @@
-# Aula 7 - Desenvolvimento de Site Responsivo
+# Aula 6 - Final
 
-* Desenvolvimento de Site Responsivo.
-* A atividade encontra-se neste link: [Atividade 12]([https://classroom.google.com/c/NjU2ODc1Njk5NTI2/a/NjcyNDI3MTc5NTkx/details](https://classroom.google.com/c/NjU2ODc1Njk5NTI2/a/NjgxODQ4MjYxNTgw/details))
-* Crie um site responsivo utilizando o Bootstrap que exibe informações sobre uma empresa fictícia/ou tema aplicado na Atividade 06. O site deve ter uma barra de navegação no topo com o nome da empresa/contexto e links para diferentes seções do site, como "Sobre nós", "Produtos" e "Contato" (Próximo ao desenvolvido no Protótipo). Além disso, o site deve ter um cabeçalho com uma imagem de destaque e um texto de boas-vindas
+* Atividade referente a Aula 06 da disciplina Projeto de Interface.
+* A atividade encontra-se neste link: [Atividade 06](https://classroom.google.com/c/NjU2ODc1Njk5NTI2/a/NjcyNDI3MTc5NTkx/details)
 
-## Instruções:
-* [x] Crie uma estrutura básica de HTML para o site, incluindo a importação das bibliotecas do Bootstrap.
-* [x] Utilize o componente "navbar" do Bootstrap para criar a barra de navegação no topo do site.
-* [x] Adicione o nome da empresa e os links para as seções correspondentes.
-* [x] Crie um cabeçalho com uma imagem de destaque e um texto de boas-vindas utilizando as classes do Bootstrap para alinhamento e estilização.
-* [x] Divida o restante do conteúdo do site em no mínimo 4 seções. Por exemplo, crie uma seção "Sobre nós" com informações sobre a empresa, uma seção "Produtos" com uma lista de produtos e uma seção "Contato" com um formulário de contato.
-* [x] Utilize as classes do Bootstrap para tornar o site responsivo, garantindo que ele se adapte a diferentes tamanhos de tela.
-* [x] Adicione estilos personalizados ao site utilizando as classes do Bootstrap ou criando suas próprias classes CSS.
-* [x] Adicione um carrossel de imagens na seção de destaque do cabeçalho, exibindo várias imagens de forma rotativa.
-* [x] Adicione no mínimo 2 acordeons em sua estrutura total.
-* [x] Crie uma seção de depoimentos, utilizando o componente "carousel" do Bootstrap, onde os clientes podem deixar feedback sobre a empresa, ou apenas passagem de imagens.
-* [x] Implemente um formulário na seção de contato, utilizando os componentes de formulário do Bootstrap.
-* [x] Adicione ícones sociais na barra de navegação ou no rodapé do site, permitindo que os visitantes se conectem com a empresa em diferentes plataformas.
-* [x] Explore as classes de utilitário do Bootstrap, como cores, espaçamentos e tipografia, para aprimorar o estilo e a aparência do site. Deve utilizar as mesmas cores da Logo.
-* [ ] Integre o Google Maps na seção de contato para exibir a localização da empresa, ou aplique outro api de localização.
-* [ ] Crie uma página de equipe para exibir informações sobre os membros da empresa, incluindo suas fotos e descrições.
-* [x] Estes são apenas itens obrigatórios. Criatividade e uso expansivo dos recursos do CSS e Bootstrap serão parte da Avaliação no geral.
+Esta é a nossa avaliação final, no qual você deverá aplicar todos os conceitos visto em aula até então sobre HTML e CSS. O tema que você criar nesta atividade deve se estender até a entrega do trabalho final da Avaliação A2, para criação do site responsivo, por isso escolha bem a temática. O seu site deve ter obrigatoriamente:
 
-## 1
-* [x] Para envio do trabalho você deverá colocar todas as mídias e arquivos, no mínimo 5 arquivos html, 1 arquivo CSS e se utilizar, 1 arquivo JavaScript enviando em um link do Drive.
+## Itens do Index:
+* [x] Imagem ou logo de Favicon com texto na Aba (Title);
+* [x] Menu, criado com Nav, com link para no mínimo 4 páginas (pode ter aplicação do Header;
+* [x] Abaixo do Menu, Imagem de entrada, ou como Background;
+* [x] Nota de Rodapé, utilizando no mínimo 4 ícones clicáveis e duas divisões de informações.
 
-## 2
-* [x] Lembrando que este site será apresentado em sala. Para apresentação, colocar toda estrutura em um pen drive para facilitar a abertura dos arquivos em sala.
+## Informações gerais 
 
-## Atenção
-* [x] OBS: Não poderá utilizar os exemplos pré-prontos do Bootstrap. Só poderá utilizar os recursos individuais do mesmo.
+* [x] no mínimo *4 parágrafos* de texto, duas imagens, e **1 arquivo** de qualquer mídia (áudio, vídeo);
+
+## Itens da Páginas:
+* [x] Cada página deve ter no mínimo **4 parágrafos** de texto, duas imagens, e **1 arquivo** de qualquer mídia (áudio, vídeo);
+* [x] Em uma das páginas deve ter uma seção com no mínimo **3 imagens** com textos;
+* [x] Um formulário com no mínimo **20 entradas**, aplicação de Fieldset e botão Enviar;
+* [x] Criação de **6 Listas**, com alguma alteração de ```CSS```.
+
+## Informações de Design obrigatórias:
+* [x] Seu projeto deve utilizar no mínimo 5 fontes (online ou off-line);
+* [x] Deve utilizar apenas cores idênticas as cores da sua logo, marca ou cores utilizadas no menu, como holver e Box;
+* [x] As seções devem ter cores diferentes (background), apenas o menu pode ser branco padrão.
+
+## Entregar no mínimo:
+* [x] 1 arquivo ```index```
+* [x] 4 arquivos ```.html```
+* [x] 1 arquivo ```.css```
+* [x] 11 **Imagens**
+* [x] 4 **áudios ou vídeos**
+* [x] 3 **ícones**
+
+### Lembrando que os mesmos devem estar em pastas para facilitar o processo de avaliação.
+* [x] Caso use mais de um ```CSS``` criar uma pasta de Estilos.
+* [x] No anexo abaixo, tem um exemplo de execução, que serve como base.
