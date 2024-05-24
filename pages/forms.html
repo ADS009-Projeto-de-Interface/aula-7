@@ -491,9 +491,27 @@
                                 </div>
                                 <hr class="mb-4">
                                 <div id="liveAlertPlaceholder"></div>
-                                <button class="btn btn-secondary btn-lg btn-block" type="reset" id="liveAlertBtn">Apagar Informações</button>
+                                <button class="btn btn-secondary btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal" type="reset" id="liveAlertBtn">Apagar Informações</button>
                                 <button class="btn btn-primary btn-lg btn-block button-focus" type="submit">Continue o checkout</button>
                             </form>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Deseja realmente limpar o seu formulário?</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p class="fw-light"> As informações deste formulários serão apagadas e <span class="fw-bolder text-decoration-underline">NÃO PODERÃO</span> mais ser recuperadas!</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-success" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Entendi</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

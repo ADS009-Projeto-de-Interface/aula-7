@@ -37,3 +37,11 @@ $(document).ready(function(){
         $(this).text(i+1).prepend("0");
     });
 });
+
+// Javascript p/ Modais
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})

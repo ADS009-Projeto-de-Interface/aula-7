@@ -93,7 +93,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active text-light fw-bolder" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="pages/forms.html">Formulários</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -356,6 +359,69 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mentorContact bg-tertiary p-5">
+    <div class="row">
+      <div class="col-6 localization-map pt-5 pb-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.9928178235377!2d-47.894473999999995!3d-15.751519199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3a25ac400001%3A0x5b36ebba724cade4!2sEdif%C3%ADcio%20Jos%C3%A9%20de%20Alencar!5e0!3m2!1spt-BR!2sbr!4v1716511694186!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 class="fw-bold mt-5">Edifício José de Alencar</h3>
+        <span class="fw-bolder">Endereço:</span><span class="fw-light">SEPN Comércio Residencial Norte 512 - Brasília, DF, 70765-080</span>
+        <br>
+        <span class="fw-bolder">Horário de funcionamento:</span><span class="fw-light"> Aberto 24 horas</span>
+        <br>
+        <span class="fw-bolder">Telefone:</span><span class="fw-light"> (61) 2328-4130</span>
+      </div>
+
+      <div class="col form-contact">
+        <div class="mt-5">
+          <small class="fw-light">AGENDE AGORA MESMO</small>
+          <h2 class="display-5">SUA MENTORIA</h2>
+          <form class="mr-5 needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Seu nome</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">Me fale como você quer ser chamado :)</div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col">
+                <div data-mdb-input-init class="form-outline">
+                  <label class="form-label" for="form3Example1">E-mail</label>
+                  <input type="text" id="form3Example1" class="form-control" />
+                </div>
+              </div>
+              <div class="col">
+                <div data-mdb-input-init class="form-outline">
+                  <label class="form-label" for="form3Example2">Whatsapp</label>
+                  <input type="text" id="form3Example2" class="form-control" required />
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col">
+                <div data-mdb-input-init class="form-outline">
+                  <label class="form-label" for="form3Example1">Data</label>
+                  <input type="date" id="form3Example1" class="form-control" />
+                </div>
+              </div>
+              <div class="col">
+                <div data-mdb-input-init class="form-outline">
+                  <label class="form-label" for="form3Example2">Horário</label>
+                  <input type="time" id="form3Example2" class="form-control" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Agendar sua mentoria</button>
+            </div>
+
+          </form>
         </div>
       </div>
     </div>
