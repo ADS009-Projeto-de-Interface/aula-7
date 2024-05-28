@@ -176,318 +176,135 @@
 
               <div class="p-5 mb-4 rounded-3">
                 <div class="container-fluid py-5">
-                    <h1 class="display-5 fw-bold">Node <sup>JS</sup></h1>
-                    <p class="col-md-8 fs-4"><b>NodeJS</b> é uma interface da qual diversos tipos do DOM herdam, e que permite que esses tipos sejam tratados de forma similar, por exemplo, herdando os mesmos métodos ou sendo testados da mesma forma.</p>
+                    <h1 class="display-5 fw-bold">Angular <sup>JS</sup></h1>
+                    <p class="col-md-8 fs-4"><b>Angular</b> é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em TypeScript liderado pela Equipe Angular do Google e por uma comunidade de indivíduos e corporações. Angular é uma reescrita completa do AngularJS, feito pela mesma equipe que o construiu.</p>
                     <small class="small">Fonte: <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Node" target="_blank"><i>MDN Web Docs</i></a></small>
                 </div>
 
-                <div class="row align-items-md-stretch m-4">
+                <div class="row align-items-md-stretch">
                     <div class="col-md-6">
                         <div class="h-100 p-5 rounded-3 bg-danger text-light">
                             <h2 class="fw-bold">Angular <sup>JS</sup></h2>
-                            <p class="fw-light">é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.</p>
-                            <p class="fw-light">A principal característica do Node.js é sua arquitetura assíncrona e orientada por eventos. O runtime do Node.js é single-thread — uma única thread (chamada de Event Loop) é responsável por executar o código Javascript, sem a necessidade de criar novas threads, o que torna o código mais simples de manter. Chamadas que seriam bloqueantes, como entrada/saída, são realizadas de forma assíncrona usando a libuv.</p>
-                            <p class="fw-light">Ryan Dahl se inspirou para criar Node.js depois de ver barra de progresso de carga de arquivos no Flickr, ele percebeu que o navegador não sabia o quanto do arquivo foi carregado e tinha que consultar o servidor web.</p>
+                            <p class="fw-light"><strong>Angular</strong> foi anunciado no ng-Europe conference 22-23 de setembro de 2014. As mudanças drásticas na versão 2.0 criou uma considerável controvérsia entre os desenvolvedores.</p>
+                            <p class="fw-light">Em 30 de abril de 2015, os desenvolvedores Angular anunciaram que o Angular 2 foi transformado de Alfa a Developer Preview. O Angular 2 mudou-se para o Beta em dezembro de 2015, e a primeira versão foi publicada em Maio de 2016. A versão final foi lançada em 14 de setembro de 2016.</p>
+                            <p class="fw-light">O Angular 17 foi lançado em 06 de novembro de 2023:</p>
+                            <ul>
+                                <li>Nova documentação e uma melhor experiência do usuário para todos os níveis de desenvolvedor.</li>
+                                <li>Novo construtor de aplicativos com ESBuild e Vite.</li>
+                                <li>Novo visual, mesma estrutura.</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                            <h2>O que posso fazer com Node<sup>JS</sup>?</h2>
+                            <h2>O que posso fazer com Angular?</h2>
                             <ul class="fw-light">
-                                <li>
-                                    <button type="button" class="btn btn-ligh">Bate-papo em tempo real</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn btn-ligh" id="">Streaming de Dados</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn btn-ligh" id="">Proxies do lado do servidor</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn btn-ligh" id="">Painéis de monitoramento do sistema</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn btn-ligh" id="">API REST</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn btn-ligh" id="">Aplicativos de página única (SPAs)</button>
-                                </li>
-                                <li>
-                                    <button type="button" class="btn btn-ligh" id="">Alta eficiência e Código reutilizável</button>
-                                </li>
+                                <li class="fw-light">São aplicativos web que carregam uma única página HTML e atualizam dinamicamente o conteúdo à medida que o usuário interage com a aplicação.</li>
+                                <li class="fw-light">Oferecem uma experiência de usuário mais fluida e rápida, similar à de aplicativos desktop.</li>
+                                <li class="fw-light">São aplicativos web que se comportam como aplicativos nativos, oferecendo recursos como instalação na tela inicial, notificações push e acesso offline.</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="row pt-5">
-                        <div class="col mb-2">
-                            <h2>Exemplo de aplicação (TO-DO List)</h2>
-                            <small class="fw-light small">Que o NodeJS pode ser usado <i>(mas não está rodando em node nesse caso)</i></small>
+                        <div class="col mb-5">
+                            <h2 class="fw-bolder">Blog feito em Angular</h2>
+                            <small class="fw-light small">Com Angular, conseguimos criar um CMS para criação de um blog</i></small>
                         </div>
                     </div>
-
-                    <!-- TO DO LIST Javascript + Bootstrap -->
-                    <section class="vh-100 gradient-custom-2">
-                        <div class="container h-100">
-                            <div class="row d-flex justify-content-center align-items-center h-100">
-                                <div class="col-md-12 col-xl-10">
-                    
-                                    <div class="card mask-custom">
-                                        <div class="card-body p-4 text-dark">
-                    
-                                            <div class="text-center pt-3 pb-2">
-                                                <h2 class="my-4 display-4">Task List</h2>
-                                            </div>
-                    
-                                            <table class="table text-white mb-0">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">#</th>
-                                                        <th scope="col">Membros do Time</th>
-                                                        <th scope="col">Tarefa</th>
-                                                        <th scope="col">Prioridade</th>
-                                                        <th scope="col">Ações</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="fw-normal">
-                                                        <th class="align-middle">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>
-                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                                                                alt="avatar 1" style="width: 45px; height: auto;">
-                                                            <span class="ms-2 fw-bold">Alice Mayer</span>
-                                                        </td>
-                                                        <td class="align-middle">
-                                                            <span class="fw-light">Falar com Sam sobre pagamentos.</span>
-                                                        </td>
-                                                        <td class="align-middle">
-                                                            <h6 class="mb-0"><span
-                                                                    class="badge rounded-pill text-bg-danger fw-light pt-2 pb-2 ps-3 pe-3">Alta
-                                                                    Prioridade</span></h6>
-                    
-                                                        </td>
-                                                        <td class="align-middle">
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
-                                                                <span class="material-symbols-outlined text-success">check</span>
-                                                            </a>
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
-                                                                <span class="material-symbols-outlined text-danger">delete</span>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="fw-normal">
-                                                        <th class="align-middle">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>
-                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
-                                                                alt="avatar 1" style="width: 45px; height: auto;">
-                                                            <span class="ms-2 fw-bold">Kate Moss</span>
-                                                        </td>
-                                                        <td class="align-middle fw-light">Make payment to Bluedart</td>
-                                                        <td class="align-middle">
-                                                            <h6 class="mb-0"><span
-                                                                    class="badge rounded-pill text-bg-success fw-light pt-2 pb-2 ps-3 pe-3">Baixa
-                                                                    Prioridade</span></h6>
-                                                        </td>
-                                                        <td class="align-middle">
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
-                                                                <span class="material-symbols-outlined text-success">check</span>
-                                                            </a>
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
-                                                                <span class="material-symbols-outlined text-danger">delete</span>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="fw-normal">
-                                                        <th class="align-middle">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>
-                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                                                alt="avatar 1" style="width: 45px; height: auto;">
-                                                            <span class="ms-2 fw-bold">Danny McChain</span>
-                                                        </td>
-                                                        <td class="align-middle fw-light">Office rent</td>
-                                                        <td class="align-middle">
-                                                            <h6 class="mb-0"><span
-                                                                    class="badge rounded-pill text-bg-warning text-dark fw-light pt-2 pb-2 ps-3 pe-3">Média
-                                                                    Prioridade</span></h6>
-                                                        </td>
-                                                        <td class="align-middle">
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
-                                                                <span class="material-symbols-outlined text-success">check</span>
-                                                            </a>
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
-                                                                <span class="material-symbols-outlined text-danger">delete</span>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="fw-normal">
-                                                        <th class="align-middle">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    id="flexCheckDefault">
-                                                                <label class="form-check-label" for="flexCheckDefault"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td>
-                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
-                                                                alt="avatar 1" style="width: 45px; height: auto;">
-                                                            <span class="ms-2 fw-bold">Alexa Chung</span>
-                                                        </td>
-                                                        <td class="align-middle fw-light">Office grocery shopping</td>
-                                                        <td class="align-middle">
-                                                            <h6 class="mb-0"><span
-                                                                    class="badge rounded-pill text-bg-danger fw-light pt-2 pb-2 ps-3 pe-3">Alta
-                                                                    Prioridade</span></h6>
-                                                        </td>
-                                                        <td class="align-middle">
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
-                                                                <span class="material-symbols-outlined text-success">check</span>
-                                                            </a>
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
-                                                                <span class="material-symbols-outlined text-danger">delete</span>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="fw-normal">
-                                                        <th class="border-0 align-middle">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value=""
-                                                                    id="flexCheckChecked" checked="checked">
-                                                                <label class="form-check-label" for="flexCheckChecked"></label>
-                                                            </div>
-                                                        </th>
-                                                        <td class="border-0">
-                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                                                                alt="avatar 1" style="width: 45px; height: auto;">
-                                                            <span class="ms-2 fw-bold text-decoration-line-through">Ben Smith</span>
-                                                        </td>
-                                                        <td class="border-0 align-middle fw-light text-decoration-line-through">Ask for
-                                                            Lunch to Clients</td>
-                                                        <td class="border-0 align-middle">
-                                                            <h6 class="mb-0"><span
-                                                                    class="badge rounded-pill text-bg-secondary fw-light pt-2 pb-2 ps-3 pe-3">Resolvido</span>
-                                                            </h6>
-                                                        </td>
-                                                        <td class="border-0 align-middle">
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
-                                                                <span class="material-symbols-outlined text-success">check</span>
-                                                            </a>
-                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
-                                                                <span class="material-symbols-outlined text-secondary">delete</span>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                    
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <div class="row m-4">
-                        <div class="col mb-2">
-                            <h2>O que podemos fazer agora com NodeJS?</h2>
-                            <small class="fw-light small">Antes, precisavamos de AJAX e um Backend! Fonte: <a href="https://www.hostinger.com.br/tutoriais/o-que-e-node-js?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=1001541&gad_source=1&gclid=CjwKCAiA0bWvBhBjEiwAtEsoW6TkdbBrKJQ8k0_qyVf-HFbcqpkfKqMg4MoV5QgcHQVLUdPQSh3ZCxoClG4QAvD_BwE#Aplicacoes_Praticas_do_Nodejs" target="_blank"><i>Hostinger Tutoriais</i></a></small>
-                        </div>
-                    </div>
-
-                    <!-- Tabela com comparativo de tecnologias -->
-                    <div class="row m-3">
-                        <div class="col">
-                            <table class="table">
-                                <thead>
-                                  <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">NodeJS</th>
-                                    <th scope="col">AJAX</th>
-                                  </tr>
-                                </thead>
-                                <tbody class="table-group-divider">
-                                    <tr>
-                                        <th scope="row"><kbd style="background-color:#90C53F;">Arquitetura</kbd></th>
-                                        <td>
-                                            <p class="fw-light"><code>Assíncrono</code></p>
-                                        </td>
-                                        <td>
-                                            <p class="fw-light"><code>Assíncrono</code></p>
-                                        </td>
-                                      </tr>
-                                    <tr>
-                                    <th scope="row"><kbd style="background-color:#90C53F;">Características</kbd></th>
-                                    <td>
-                                        <p class="fw-light">Como falamos anteriormente, a thread do Node.js não espera por uma resposta e segue para processar uma solicitação subsequente. Na arquitetura assíncrona, o loop de eventos opera de maneira orientada a ocorrências. Depois de receber uma resposta da chamada de API anterior, ele coloca a resposta na fila de eventos.</p>
-                                    </td>
-                                    <td class="w-50">
-                                        <ol class="fw-light">
-                                            <li>O navegador gera uma chamada do JavaScript que então ativa o XMLHttpRequest.</li>
-                                            <li>Em segundo plano o navegador cria uma requisição HTTP para o servidor.</li>
-                                            <li>O servidor recebe a requisição, busca os dados e envia para o navegador.</li>
-                                            <li>O navegador recebe os dados requisitados que irão aparecer imediatamente na página. Não é necessário recarregar.</li>
-                                        </ol>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row"><kbd style="background-color:#90C53F;">História</kbd></th>
-                                    <td>
-                                        <p class="fw-light">
-                                            O Node.js nasceu em 2009 como uma resposta às tentativas de rodar códigos JavaScript em modo server side, uma vez que a linguagem tinha como meta principal a manipulação do DOM (Document Object Model) e deixar as aplicações web mais interativas e dinâmicas.
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-light">
-                                            No início dos anos 90, quando a internet ainda não era tão avançada, a mesma funcionalidade iria exigir que a página fosse recarregada sempre que uma nova sugestão de pesquisa aparecesse na tela. O AJAX permite a troca de informações simultânea sem interferir com outras funções.
-                                        </p>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row"><kbd style="background-color:#90C53F;">Estrutura</kbd></th>
-                                    <td>
-                                        <p class="fw-light">
-                                            Para que o NodeJS devolva respostas da consulta de um Banco de Dados (MongoDB)[mas pode ser outro]! Ele não precisa fazer esta requisição ao banco enquanto processo 
-                                        </p>
-                                    </td>
-                                    <td>
-                                        <p class="fw-light">
-                                            Para o AJAX, é necessário que uma requisição seja feita no lado servidor e apresentar esta informação no lado cliente.
-                                        </p>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
-                    </div>
-
-                    <div class="bd-example m-4"></div>
-
                 </div>
-
               </div>
-
         </div>
 
+        <!-- Blog feito em Angular -->
+        <section class="bg-dark container-fluid pt-5 pb-5 w-100">
+            <div class="row m-5">
+                <div class="pb-5">
+                    <h2 class="display-5 fw-bolder text-light">Artigos</h2>
+                    <small class="fw-light small text-light">Blog de notícias feito com Angular JS e com carregamento dinâmico</i></small>
+                </div>
+                
+                <div class="col">
+                    <div class="card bg-dark border border-light-subtle">
+                        <img src="../img/blog/001.png" class="card-img-top" alt="...">
+                        <div class="card-body shadow-lg">
+                            <small class="text-uppercase fw-bolder text-wrap pink-500">tecnologia</small>
+                            <p class="card-text fw-light text-white fw-bolder">Realidade virtual: Entendendo a tecnologia</p>
+                            <small class="fw-light text-white">16 de Fev - Leitura de 12min</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class="card bg-dark border border-light-subtle">
+                            <img src="../img/blog/002.png" class="card-img-top" alt="...">
+                            <div class="card-body shadow-lg">
+                                <small class="text-uppercase fw-bolder text-wrap pink-500">tecnologia</small>
+                                <p class="card-text fw-light text-white fw-bolder">Você fica inseguro(a) na hora de escrever?</p>
+                                <small class="fw-light text-white">16 de Fev - Leitura de 12min</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class="card bg-dark border border-light-subtle">
+                            <img src="../img/blog/003.png" class="card-img-top" alt="...">
+                            <div class="card-body shadow-lg">
+                                <small class="text-uppercase fw-bolder text-wrap pink-500">tecnologia</small>
+                                <p class="card-text fw-light text-white fw-bolder">React Native Weekend - 21 na minha opinião</p>
+                                <small class="fw-light text-white">16 de Fev - Leitura de 12min</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-5">
+                <div class="col">
+                    <div class="card bg-dark border border-light-subtle">
+                        <img src="../img/blog/004.png" class="card-img-top" alt="...">
+                        <div class="card-body shadow-lg">
+                            <small class="text-uppercase fw-bolder text-wrap pink-500">tecnologia</small>
+                            <p class="card-text fw-light text-white fw-bolder">Como ir além das linhas de código</p>
+                            <small class="fw-light text-white">16 de Fev - Leitura de 12min</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col">
+                        <div class="card bg-dark border border-light-subtle">
+                            <img src="../img/blog/005.png" class="card-img-top" alt="...">
+                            <div class="card-body shadow-lg">
+                                <small class="text-uppercase fw-bolder text-wrap pink-500">tecnologia</small>
+                                <p class="card-text fw-light text-white fw-bolder">Realidade virtual: Entendendo a tecnologia</p>
+                                <small class="fw-light text-white">16 de Fev - Leitura de 12min</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark border border-light-subtle">
+                        <img src="../img/blog/006.png" class="card-img-top" alt="...">
+                        <div class="card-body shadow-lg">
+                            <small class="text-uppercase fw-bolder text-wrap pink-500">tecnologia</small>
+                            <p class="card-text fw-light text-white fw-bolder">Realidade virtual: Entendendo a tecnologia</p>
+                            <small class="fw-light text-white">16 de Fev - Leitura de 12min</small>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-center p-3">
+                        <button type="button" class="btn btn-outline-light text-uppercase fw-light pt-3 pb-3 ps-5 pe-5">carregar mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
-        <footer class="bg-primary text-white text-center text-lg-start mt-5">
+        <footer class="bg-primary text-white text-center text-lg-start">
             <!-- Section: Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <!-- Left -->
