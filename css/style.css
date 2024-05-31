@@ -51,8 +51,12 @@ table tb td img{
   height: 25px;
 }
 
-.bg-magenta, bg-pink-500{
+.bg-magenta, .bg-pink-500{
   background-color: #d63384;
+}
+
+.bg-orange{
+  background-color: #FF5500;
 }
 
 /* modificações de texto - index.html */
@@ -103,6 +107,18 @@ table tb td img{
   --bs-btn-disabled-border-color: #d63384;
   --bs-gradient: none;
 }
+
+/* Footer transparente  página Angular*/
+#blog-angular{
+  background: rgb(0,0,0);
+  background: linear-gradient(
+    180deg, 
+    rgba(0,0,0,1) 0%, 
+    rgba(0,0,0,1) 85%, 
+    rgba(13,110,253,1)
+    100%);
+  margin-top: -100px;
+ }
 
 
 

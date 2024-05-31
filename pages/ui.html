@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="ADS009 - Projeto de Interface">
+        <meta name="author" content="24114290137 - Sérgio Silva">
+
+        <!-- Chamando Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet" />
+
+        <!-- Chamando CSS -->
+        <link rel="stylesheet" href="../css/style.css" />
+
+        <!-- Chamando Bootstrap 5.3.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!-- Chamando Biblioteca de Ícones Material Design -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <!-- Colocando Favicon na página-->
+        <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+        <!-- Material Design Icons -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <!-- Acionando Toasts -->
+        <script src="../js/snippers.js" defer></script>
+
+        <title>ADS009 - Projeto de Interface | Aula 2 > Atividade 02 | NodeJS</title>
+    </head>
+    <body>
+        <!-- ATIVIDADE 06 - FINAL -->
+        <!-- Esta é a nossa avaliação final, no qual você deverá aplicar todos os conceitos visto em aula até então sobre HTML e CSS.
+            O tema que você criar nesta atividade deve se estender até a entrega do trabalho final da Avaliação A2, para criação do
+            site responsivo, por isso escolha bem a temática. O seu site deve ter obrigatoriamente: -->
+
+        <!-- Itens do Index: -->
+        <!-- [x] Imagem ou logo de Favicon com texto na Aba (Title); -->
+        <!-- [x] Menu, criado com Nav, com link para no mínimo 4 páginas (pode ter aplicação do Header; -->
+        <!-- [x] Abaixo do Menu, Imagem de entrada, ou como Background; -->
+        <!-- [x] Nota de Rodapé, utilizando no mínimo 4 ícones clicáveis e duas divisões de informações. -->
+
+        <!-- Informações gerais -->
+        <!-- [x] no mínimo 4 parágrafos de texto, duas imagens, e 1 arquivo de qualquer mídia (áudio, vídeo); -->
+
+        <!-- Itens da Páginas: -->
+        <!-- [x] Cada página deve ter no mínimo 4 parágrafos de texto, duas imagens, e 1 arquivo de qualquer mídia (áudio, vídeo); -->
+        <!-- [x] Em uma das páginas deve ter uma seção com no mínimo 3 imagens com textos; -->
+        <!-- [x] Um formulário com no mínimo 20 entradas, aplicação de Fieldset e botão Enviar; -->
+        <!-- [-] Criação de 6 Listas, com alguma alteração de CSS. -->
+
+        <!-- Informações de Design obrigatórias: -->
+        <!-- [-] Seu projeto deve utilizar no mínimo 5 fontes (online ou off-line); -->
+        <!-- [x] Deve utilizar apenas cores idênticas as cores da sua logo, marca ou cores utilizadas no menu, como holver e Box; -->
+        <!-- [-] As seções devem ter cores diferentes (background), apenas o menu pode ser branco padrão. -->
+
+        <!-- Entregar no mínimo: -->
+        <!-- [x] 1 arquivo Index -->
+        <!-- [x] 4 arquivos .html -->
+        <!-- [x] 1 arquivo .css -->
+        <!-- [x] 11 Imagens -->
+        <!-- [x] 4 áudios ou vídeos -->
+        <!-- [x] 3 ícones -->
+
+        <!-- Lembrando que os mesmos devem estar em pastas para facilitar o processo de avaliação. -->
+        <!-- [x] Caso use mais de um CSS criar uma pasta de Estilos. -->
+        <!-- [x] No anexo abaixo, tem um exemplo de execução, que serve como base.-->
+
+        <!-- MENU PRINCIPAL -->
+        <nav class="navbar navbar-expand-lg bg-magenta sticky-top p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light text-white brand-logo" href="#">Sérgio Silva</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="forms.html">Formulários</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Frontend
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-dark" href="frontend.html">Frontend</a></li>
+                    <li><a class="dropdown-item text-dark" href="html.html">HTML5</a></li>
+                    <li><a class="dropdown-item text-dark" href="css.html">CSS3</a></li>
+                    <li>
+                    <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-dark" href="js.html">JS</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Frameworks
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-dark" href="bootstrap.html">Bootstrap</a></li>
+                    <li>
+                    <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-dark" href="nodejs.html">NodeJS</a></li>
+                    <li><a class="dropdown-item text-dark" href="react.html">React Native</a></li>
+                    <li><a class="dropdown-item text-dark" href="angular.html">Angular 17.3.0</a></li>
+                </ul>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Design
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-dark fw-bolder" href="ui.html">UI Design</a></li>
+                    <li>
+                    <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-dark" href="ux.html">UX Design</a></li>
+                </ul>
+                </li>
+            </ul>
+            <div id="socialMedia">
+                <a href="https://web.facebook.com/sergio.bezerradasilva" class="me-4 text-light" target="_blank"
+                alt="Veja o meu Faceboook" title="Veja o meu Faceboook">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/sergio.silva.85/" class="me-4 text-light" target="_blank"
+                alt="Veja o meu Instagram" title="Veja o meu Instagram">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sergiobslva/" class="me-4 text-light" target="_blank"
+                alt="Visite o meu Linkedin" title="Visite o meu Linkedin">
+                <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ADS009-Projeto-de-Interface" class="me-4 text-light" target="_blank"
+                alt="Acesse o meu Github" title="Acesse o meu Github">
+                <i class="fab fa-github"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        </nav>
+
+        <div class="container-fluid m-0 p-0">
+            <!-- Banner Principal -->
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/banner-ui.png" class="d-block w-100" alt="UI - User Interface Design">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="p-5 mb-4 rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">UI Design</h1>
+                    <p class="col-md-8 fs-4"><b>Design de interface é o desenvolvimento de computadores, aplicações, máquinas, dispositivos de comunicação móveis, softwares e sítios web com o foco na experiência dos usuários e interação. Também conhecido como UI (User Interface) design, é uma disciplina que se concentra na criação de interfaces gráficas interativas para sistemas digitais.</p>
+                    <small class="small">Fonte: <a href="https://pt.wikipedia.org/wiki/Design_de_interface" target="_blank"><i>Wikipédia</i></a></small>
+                </div>
+
+                <div class="row align-items-md-stretch m-4 bg-orange">
+                    <div class="col-md-6">
+                        <div class="h-100 p-5 rounded-3 bg-magenta text-white">
+                            <h2 class="fw-bold">Para que serve o User Interface?</h2>
+                            <p class="fw-light">Design de interface é o desenvolvimento de computadores, aplicações, máquinas, dispositivos de comunicação móveis, softwares e sítios web com o foco na experiência dos usuários e interação. Também conhecido como UI (User Interface) design, é uma disciplina que se concentra na criação de interfaces gráficas interativas para sistemas digitais. Essas interfaces são projetadas para facilitar a interação entre os usuários e os dispositivos ou aplicativos com os quais eles interagem. O design de interface desempenha um papel fundamental na usabilidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                            <h2>Para que serve o User Interface?</h2>
+                            <ul class="fw-light">
+                                <li>
+                                    <button type="button" class="btn btn-ligh">Criar interfaces visuais</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Design de interação</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Arquitetura da informação</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Acessibilidade</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Usabilidade</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Melhora a experiência do usuário</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn btn-ligh" id="">Fortalece a marca</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row pt-5">
+                        <div class="col mb-2">
+                            <h2>Exemplos de UI Design</h2>
+                            <small class="fw-light small">Qual a importância de utilizar o UI Design em seus projetos</i></small>
+                        </div>
+                    </div>
+
+                    <!-- TO DO LIST Javascript + Bootstrap -->
+                    <section class="vh-100 gradient-custom-2">
+                        <div class="container h-100">
+                            <div class="row d-flex justify-content-center align-items-center h-100">
+                                <div class="col-md-12 col-xl-10">
+                    
+                                    <div class="card mask-custom">
+                                        <div class="card-body p-4 text-dark">
+                    
+                                            <div class="text-center pt-3 pb-2">
+                                                <h2 class="my-4 display-4">Pockemons</h2>
+                                            </div>
+                    
+                                            <table class="table text-white mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Membros do Time</th>
+                                                        <th scope="col">Tarefa</th>
+                                                        <th scope="col">Prioridade</th>
+                                                        <th scope="col">Ações</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="fw-normal">
+                                                        <th class="align-middle">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault"></label>
+                                                            </div>
+                                                        </th>
+                                                        <td>
+                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                                            <span class="ms-2 fw-bold">Alice Mayer</span>
+                                                        </td>
+                                                        <td class="align-middle">
+                                                            <span class="fw-light">Falar com Sam sobre pagamentos.</span>
+                                                        </td>
+                                                        <td class="align-middle">
+                                                            <h6 class="mb-0"><span
+                                                                    class="badge rounded-pill text-bg-danger fw-light pt-2 pb-2 ps-3 pe-3">Alta
+                                                                    Prioridade</span></h6>
+                    
+                                                        </td>
+                                                        <td class="align-middle">
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
+                                                                <span class="material-symbols-outlined text-success">check</span>
+                                                            </a>
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
+                                                                <span class="material-symbols-outlined text-danger">delete</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fw-normal">
+                                                        <th class="align-middle">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault"></label>
+                                                            </div>
+                                                        </th>
+                                                        <td>
+                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                                            <span class="ms-2 fw-bold">Kate Moss</span>
+                                                        </td>
+                                                        <td class="align-middle fw-light">Make payment to Bluedart</td>
+                                                        <td class="align-middle">
+                                                            <h6 class="mb-0"><span
+                                                                    class="badge rounded-pill text-bg-success fw-light pt-2 pb-2 ps-3 pe-3">Baixa
+                                                                    Prioridade</span></h6>
+                                                        </td>
+                                                        <td class="align-middle">
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
+                                                                <span class="material-symbols-outlined text-success">check</span>
+                                                            </a>
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
+                                                                <span class="material-symbols-outlined text-danger">delete</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fw-normal">
+                                                        <th class="align-middle">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault"></label>
+                                                            </div>
+                                                        </th>
+                                                        <td>
+                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                                            <span class="ms-2 fw-bold">Danny McChain</span>
+                                                        </td>
+                                                        <td class="align-middle fw-light">Office rent</td>
+                                                        <td class="align-middle">
+                                                            <h6 class="mb-0"><span
+                                                                    class="badge rounded-pill text-bg-warning text-dark fw-light pt-2 pb-2 ps-3 pe-3">Média
+                                                                    Prioridade</span></h6>
+                                                        </td>
+                                                        <td class="align-middle">
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
+                                                                <span class="material-symbols-outlined text-success">check</span>
+                                                            </a>
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
+                                                                <span class="material-symbols-outlined text-danger">delete</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fw-normal">
+                                                        <th class="align-middle">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault"></label>
+                                                            </div>
+                                                        </th>
+                                                        <td>
+                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
+                                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                                            <span class="ms-2 fw-bold">Alexa Chung</span>
+                                                        </td>
+                                                        <td class="align-middle fw-light">Office grocery shopping</td>
+                                                        <td class="align-middle">
+                                                            <h6 class="mb-0"><span
+                                                                    class="badge rounded-pill text-bg-danger fw-light pt-2 pb-2 ps-3 pe-3">Alta
+                                                                    Prioridade</span></h6>
+                                                        </td>
+                                                        <td class="align-middle">
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
+                                                                <span class="material-symbols-outlined text-success">check</span>
+                                                            </a>
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
+                                                                <span class="material-symbols-outlined text-danger">delete</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="fw-normal">
+                                                        <th class="border-0 align-middle">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="flexCheckChecked" checked="checked">
+                                                                <label class="form-check-label" for="flexCheckChecked"></label>
+                                                            </div>
+                                                        </th>
+                                                        <td class="border-0">
+                                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                                                                alt="avatar 1" style="width: 45px; height: auto;">
+                                                            <span class="ms-2 fw-bold text-decoration-line-through">Ben Smith</span>
+                                                        </td>
+                                                        <td class="border-0 align-middle fw-light text-decoration-line-through">Ask for
+                                                            Lunch to Clients</td>
+                                                        <td class="border-0 align-middle">
+                                                            <h6 class="mb-0"><span
+                                                                    class="badge rounded-pill text-bg-secondary fw-light pt-2 pb-2 ps-3 pe-3">Resolvido</span>
+                                                            </h6>
+                                                        </td>
+                                                        <td class="border-0 align-middle">
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Done">
+                                                                <span class="material-symbols-outlined text-success">check</span>
+                                                            </a>
+                                                            <a href="#!" data-mdb-toggle="tooltip" title="Remove">
+                                                                <span class="material-symbols-outlined text-secondary">delete</span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="row m-4">
+                        <div class="col mb-2">
+                            <h2>O que podemos fazer agora com NodeJS?</h2>
+                            <small class="fw-light small">Antes, precisavamos de AJAX e um Backend! Fonte: <a href="https://www.hostinger.com.br/tutoriais/o-que-e-node-js?ppc_campaign=google_search_generic_hosting_all&bidkw=defaultkeyword&lo=1001541&gad_source=1&gclid=CjwKCAiA0bWvBhBjEiwAtEsoW6TkdbBrKJQ8k0_qyVf-HFbcqpkfKqMg4MoV5QgcHQVLUdPQSh3ZCxoClG4QAvD_BwE#Aplicacoes_Praticas_do_Nodejs" target="_blank"><i>Hostinger Tutoriais</i></a></small>
+                        </div>
+                    </div>
+
+                    <!-- Tabela com comparativo de tecnologias -->
+                    <div class="row m-3">
+                        <div class="col">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">NodeJS</th>
+                                    <th scope="col">AJAX</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <th scope="row"><kbd style="background-color:#90C53F;">Arquitetura</kbd></th>
+                                        <td>
+                                            <p class="fw-light"><code>Assíncrono</code></p>
+                                        </td>
+                                        <td>
+                                            <p class="fw-light"><code>Assíncrono</code></p>
+                                        </td>
+                                      </tr>
+                                    <tr>
+                                    <th scope="row"><kbd style="background-color:#90C53F;">Características</kbd></th>
+                                    <td>
+                                        <p class="fw-light">Como falamos anteriormente, a thread do Node.js não espera por uma resposta e segue para processar uma solicitação subsequente. Na arquitetura assíncrona, o loop de eventos opera de maneira orientada a ocorrências. Depois de receber uma resposta da chamada de API anterior, ele coloca a resposta na fila de eventos.</p>
+                                    </td>
+                                    <td class="w-50">
+                                        <ol class="fw-light">
+                                            <li>O navegador gera uma chamada do JavaScript que então ativa o XMLHttpRequest.</li>
+                                            <li>Em segundo plano o navegador cria uma requisição HTTP para o servidor.</li>
+                                            <li>O servidor recebe a requisição, busca os dados e envia para o navegador.</li>
+                                            <li>O navegador recebe os dados requisitados que irão aparecer imediatamente na página. Não é necessário recarregar.</li>
+                                        </ol>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><kbd style="background-color:#90C53F;">História</kbd></th>
+                                    <td>
+                                        <p class="fw-light">
+                                            O Node.js nasceu em 2009 como uma resposta às tentativas de rodar códigos JavaScript em modo server side, uma vez que a linguagem tinha como meta principal a manipulação do DOM (Document Object Model) e deixar as aplicações web mais interativas e dinâmicas.
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="fw-light">
+                                            No início dos anos 90, quando a internet ainda não era tão avançada, a mesma funcionalidade iria exigir que a página fosse recarregada sempre que uma nova sugestão de pesquisa aparecesse na tela. O AJAX permite a troca de informações simultânea sem interferir com outras funções.
+                                        </p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"><kbd style="background-color:#90C53F;">Estrutura</kbd></th>
+                                    <td>
+                                        <p class="fw-light">
+                                            Para que o NodeJS devolva respostas da consulta de um Banco de Dados (MongoDB)[mas pode ser outro]! Ele não precisa fazer esta requisição ao banco enquanto processo 
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="fw-light">
+                                            Para o AJAX, é necessário que uma requisição seja feita no lado servidor e apresentar esta informação no lado cliente.
+                                        </p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+
+                    <div class="bd-example m-4"></div>
+
+                </div>
+
+              </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-primary text-white text-center text-lg-start mt-5">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Conecte-se comigo nas redes sociais:</span>
+                </div>
+                <!-- Left -->
+        
+                <!-- Right -->
+                <div id="socialMedia">
+                    <a href="https://web.facebook.com/sergio.bezerradasilva" class="me-4 text-reset" target="_blank"
+                        alt="Veja o meu Faceboook" title="Veja o meu Faceboook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sergio.silva.85/" class="me-4 text-reset" target="_blank"
+                        alt="Veja o meu Instagram" title="Veja o meu Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sergiobslva/" class="me-4 text-reset" target="_blank"
+                        alt="Visite o meu Linkedin" title="Visite o meu Linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ADS009-Projeto-de-Interface" class="me-4 text-reset" target="_blank"
+                        alt="Acesse o meu Github" title="Acesse o meu Github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <a class="d-inline-flex align-items-center mb-2 text-light text-decoration-none"
+                                href="https://getbootstrap.com/" aria-label="Bootstrap" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2"
+                                    viewBox="0 0 118 94" role="img">
+                                    <title>Frontend</title>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                                        fill="currentColor"></path>
+                                </svg>
+                                <span class="fs-5">Frontend c/ Bootstrap</span>
+                            </a>
+                            <p>
+                                O <b>Frontend</b> de uma página na web desempenha um papel fundamental na experiência do usuário,
+                                sendo a
+                                primeira impressão e o ponto de interação entre o usuário e o conteúdo.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Principal
+                            </h6>
+                            <p>
+                                <a href="frontend.html" class="text-reset">Frontend</a>
+                            </p>
+                            <p>
+                                <a href="html.html" class="text-reset" alt="HTML5" title="HTML5">HTML5</a>
+                            </p>
+                            <p>
+                                <a href="css.html" class="text-reset" alt="CSS3" title="CSS3">CSS3</a>
+                            </p>
+                            <p>
+                                <a href="forms.html" class="text-reset" alt="Formulários HTML"
+                                    title="Formulários HTML">Formulários</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Complemento
+                            </h6>
+                            <p>
+                                <a href="bootstrap.html" class="text-reset">Bootstrap</a>
+                            </p>
+                            <p>
+                                <a href="js.html" class="text-reset">Javascript</a>
+                            </p>
+                            <p>
+                                <a href="nodejs.html" class="text-reset">NodeJS</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset disabled">React Native</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+            
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+                            <p><i class="fas fa-home me-2"></i> Brasília, Samambaia Sul, DF</p>
+                            <p><i class="fas fa-envelope me-2"></i>sergio.b.silva@iesb.edu.br</p>
+                            <p><i class="fas fa-phone me-2 text-light"></i><a href="https://wa.me/5561985016770" target="_blank"
+                                    class="text-light" alt="Converse comigo pelo Whatsapp" title="Converse comigo pelo Whatsapp">+
+                                    55 61 98501 6770</a></p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+                © OADSNM1AB-ADS009-20241 - Projeto de Interface | IESB OESTE:
+                <a class="text-light" href="https://classroom.google.com/c/NjU2ODc1Njk5NTI2" target="_blank">Google
+                    Classroom</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+        <!-- Chamandas Scripts Bootstrap 5.3.3 -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </body>
+
+</html>
