@@ -120,5 +120,11 @@ table tb td img{
   margin-top: -100px;
  }
 
+ .foto-pockemon{
+  background-image: url(../img/pockedex/bg-card.png) no-repeat;
+  width: 200px;
+  height: 550px;
+ }
+
 
 
